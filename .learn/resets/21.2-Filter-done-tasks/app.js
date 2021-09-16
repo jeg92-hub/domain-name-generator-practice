@@ -10,8 +10,3 @@ let tasks = [
 ];
 
 //your code here
-let undoneTasks = tasks.filter(function(val){
-	return (val.done===false);
-})
-
-console.log(undoneTasks)

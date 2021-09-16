@@ -6,14 +6,8 @@ let people = [
 	{ name: 'Steve', birthDate: new Date(2003,4,24) }
 ];
 
-function calculate_age(dob) {
-	var diff_ms = Date. now() - dob. getTime();
-	var age_dt = new Date(diff_ms);
-	return Math. abs(age_dt. getUTCFullYear() - 1970);
-}
-
 let simplifier = function(person){
-	return "Hello, my name is "+person.name+" and I am "+calculate_age(person.birthDate)+" years old";
+	return person.name;
 };
 
 console.log(people.map(simplifier));
